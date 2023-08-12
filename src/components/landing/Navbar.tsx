@@ -12,22 +12,22 @@ export const genNav = Object.keys(topbar).map((key) => (
 ));
 
 export default function Navbar() {
-    return <div className="flex flex-row justify-between">
-        <div className="flex-1 px-2 mx-2">
+    return <div className="flex flex-row justify-between items-center">
+        <div className="px-2 mx-2 ">
             <h2 className="font-bold">
-                <Link href="/">
+                <Link href="/" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 transition-all duration-500 ease-in-out hover-animate-gradient">
                     Razuberri
                 </Link>
             </h2>
         </div>
-        <div className="flex-none hidden lg:block">
+        <div className="md:flex hidden lg:block">
             <ul className="menu space-x-8 menu-horizontal">
                 {genNav}
-                <button className="px-6 border-2 border-black text-black rounded-xl hover:bg-black hover:text-white font-medium transition-colors">
-                    <Link href="/install">
+                <Link href="/install">
+                    <button className="btn btn-primary">
                         Install
-                    </Link>
-                </button>
+                    </button>
+                </Link>
             </ul>
         </div>
     </div>

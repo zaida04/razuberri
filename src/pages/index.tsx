@@ -2,6 +2,7 @@ import Layout from "@/components/landing/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faCopy, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function HomePage() {
     const [copied, setCopied] = useState(false);
@@ -15,7 +16,7 @@ export default function HomePage() {
             <div className="hero-content flex-col">
                 <h1 className="font-bold text-6xl">Manage. Monitor. Deploy.</h1>
                 <h3>No tracking, no paying, no hassle.</h3>
-                <div className="mockup-code w-[36rem]">
+                <div className="mockup-code w-[40rem] mt-4">
                     <div className="flex flex-row justify-between">
                         <pre data-prefix="$">
                             <code>curl razuberri.nico.engineer/s/install.sh</code>
@@ -31,6 +32,7 @@ export default function HomePage() {
                     <pre data-prefix=">" className="text-warning"><code>Installing...</code></pre>
                     <pre data-prefix=">" className="text-success"><code>Done!</code></pre>
                 </div>
+                <Link href="/install"><button className="btn btn-primary">Learn More</button></Link>
             </div>
         </div>
     </Layout>
