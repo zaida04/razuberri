@@ -1,4 +1,4 @@
-import Layout from "@/components/landing/Layout";
+import Layout from "@/components/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faCopy, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";

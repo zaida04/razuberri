@@ -1,4 +1,4 @@
-import Layout from "@/components/landing/Layout";
+import Layout from "@/components/Layout";
 import { useCallback, useState } from "react";
 
 function SpecialCode(props: { children: React.ReactNode }) {

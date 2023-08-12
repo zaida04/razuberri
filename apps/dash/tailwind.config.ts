@@ -68,15 +68,5 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-  },
-  daisyui: {
-    themes: [
-      {
-        light: {
-          ...require("daisyui/src/theming/themes")["[data-theme=light]"],
-        },
-      },
-    ],
-  },
-  plugins: [require("tailwindcss-animate"), require("daisyui")],
+  }
 }
