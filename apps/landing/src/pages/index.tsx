@@ -9,7 +9,7 @@ export default function HomePage() {
 
     return <Layout>
         <div className="alert flex flex-row bg-white border-2 border-yellow-500 md:text-sm">
-            <FontAwesomeIcon icon={faInfoCircle} />
+            <FontAwesomeIcon icon={faInfoCircle} fixedWidth />
             <span>Razuberri is in development. Expect bugs.</span>
         </div>
         <div className="hero h-[55vh] md:h-[70vh]">
@@ -28,7 +28,7 @@ export default function HomePage() {
                             setTimeout(() => {
                                 setCopied(false);
                             }, 2_500);
-                        }} />
+                        }} fixedWidth />
                     </div>
                     <pre data-prefix=">" className="text-warning"><code>Installing...</code></pre>
                     <pre data-prefix=">" className="text-success"><code>Done!</code></pre>

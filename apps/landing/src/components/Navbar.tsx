@@ -26,7 +26,7 @@ export default function Navbar() {
         <div>
             <div className="block md:hidden">
                 <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
-                    <FontAwesomeIcon className="text-xl w-8 h-8 drawer-button" icon={faBars} />
+                    <FontAwesomeIcon className="text-xl w-8 h-8 drawer-button" icon={faBars} fixedWidth />
                 </label>
             </div>
 
