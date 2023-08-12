@@ -17,7 +17,7 @@ export default function Navbar() {
     return <div className="flex flex-row justify-between items-center">
         <div className="px-2 mx-2 ">
             <h2 className="font-bold">
-                <Link href="/" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 transition-all duration-500 ease-in-out hover-animate-gradient">
+                <Link href="/" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 transition-all duration-300 ease-in-out hover-animate-gradient">
                     Razuberri
                 </Link>
             </h2>

@@ -14,13 +14,13 @@ const links = Object.keys(footerLinks).map((key) => (
 export default function Footer() {
     return (
         <div className="flex justify-center">
-            <footer className="footer footer-center border-t-2 border-gray-400 w-4/5 md:w-4/5 py-8">
+            <footer className="footer footer-center border-t-2 border-gray-400 w-3/5 py-8">
                 <div className="flex flex-col">
                     <div className="flex flex-col space-x-0 text-md md:flex-row md:space-x-8">
                         {links}
                     </div>
                     <div className="flex flex-col space-x-0 text-md md:flex-row md:space-x-8">
-                        <a className="link-hover link" href="mailto:me@nico.engineer">Need help? Reach out never.</a>
+                        <a className="link-hover link" href="mailto:me@nico.engineer">Need help? Reach out at me@nico.engineer.</a>
                     </div>
                 </div>
                 <div>
