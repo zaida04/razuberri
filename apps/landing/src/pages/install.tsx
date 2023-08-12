@@ -72,12 +72,12 @@ export default function Install() {
     }, []);
 
     return <Layout>
-        <div className="flex flex-col gap-6">
-            <ul className="menu menu-vertical menu-horizontal bg-base-200 rounded-box gap-1">
-                {stepLabels.map((label) => (
-                    <li className={`${step === label ? "bg-gray-300" : ""} rounded-lg`} onClick={setStep(label)} key={label}><a>{label}</a></li>
+        <div className="flex flex-col gap-6 mb-8">
+            <div className="join grid grid-cols-2">
+                {stepLabels.map((label, i) => (
+                    <button className={`join-item btn btn-outline ${step === label ? "bg-black text-white" : ""}`} key={i} onClick={setStep(label)}>{label}</button>
                 ))}
-            </ul>
+            </div>
             <div className="flex flex-col">
                 {steps[step as keyof typeof steps]}
             </div>

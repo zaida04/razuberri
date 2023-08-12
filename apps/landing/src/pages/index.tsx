@@ -12,7 +12,7 @@ export default function HomePage() {
             <FontAwesomeIcon icon={faInfoCircle} />
             <span>Razuberri is in development. Expect bugs.</span>
         </div>
-        <div className="hero h-[75vh] md:h-[70vh]">
+        <div className="hero h-[55vh] md:h-[70vh]">
             <div className="hero-content flex-col">
                 <h1 className="font-bold md:text-6xl text-4xl text-center">Manage. Monitor. Deploy.</h1>
                 <h3>No tracking, no paying, no hassle.</h3>
