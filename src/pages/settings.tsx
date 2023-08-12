@@ -29,7 +29,7 @@ export default function Settings() {
 
     return <DashLayout>
         <div>
-            <h1 className="text-2xl mb-4">Your Settings</h1>
+            <h1 className="text-xl text-gray-500 mt-1 mb-4">Your Settings</h1>
             <Form {...form}>
                 <form className="space-y-6 rounded-xl bg-white border-2 p-6 w-full">
                     <FormField

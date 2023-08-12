@@ -47,8 +47,8 @@ const dummyData: Server[] = [
 export default function Dashboard() {
     return <DashLayout>
         <div>
-            <div className="flex flex-row justify-between mb-2">
-                <h1 className="text-2xl mb-4">Your Servers</h1>
+            <div className="flex flex-row justify-between mt-1 mb-2">
+                <h1 className="text-xl text-gray-500 mb-4">Your Servers</h1>
                 <CreateServerButton />
             </div>
             <div className="grid grid-cols-3 gap-4">
