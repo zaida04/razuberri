@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const topbar = {
     "Home": "/",
-    "Docs": "/docs",
+
 } as const;
 
 export const genNav = Object.keys(topbar).map((key) => (
