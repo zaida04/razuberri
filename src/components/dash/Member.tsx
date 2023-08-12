@@ -15,7 +15,7 @@ export default function Member(props: MemberData) {
 
             <div className="flex flex-col justify-center">
                 <p className="font-semibold">{props.name}</p>
-                <p className="text-sm">{props.email}</p>
+                <p>{props.email}</p>
             </div>
         </div>
         <div className="flex flex-row gap-4 items-center">

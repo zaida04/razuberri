@@ -31,7 +31,7 @@ export default function Members() {
     return <DashLayout>
         <div>
             <div className="flex flex-row justify-between mt-1 mb-3">
-                <h1 className="text-xl text-gray-500 mb-4">Your Members</h1>
+                <h4 className="text-gray-500 mb-4">Your Members</h4>
                 <InviteNewUserButton />
             </div>
             <div className="flex flex-col gap-1 border rounded-xl bg-white">

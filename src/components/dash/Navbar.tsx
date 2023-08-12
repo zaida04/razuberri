@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return <div className="flex flex-row items-center justify-between w-full border-b-[1px] border-slate-300">
         <div>
-            <h1 className="text-4xl font-bold">Razuberri</h1>
+            <h2 className="text-4xl font-bold">Razuberri</h2>
         </div>
         <NavigationMenu>
             <NavigationMenuList className="space-x-4 my-2">

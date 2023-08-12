@@ -48,7 +48,7 @@ export default function Dashboard() {
     return <DashLayout>
         <div>
             <div className="flex flex-row justify-between mt-1 mb-2">
-                <h1 className="text-xl text-gray-500 mb-4">Your Servers</h1>
+                <h4 className="text-gray-500 mb-4">Your Servers</h4>
                 <CreateServerButton />
             </div>
             <div className="grid grid-cols-3 gap-4">
