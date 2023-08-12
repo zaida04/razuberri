@@ -1,8 +1,8 @@
 import Navbar from "./Navbar";
 
 export default function DashLayout(props: { children: React.ReactNode }) {
-    return <div className="flex flex-col items-center">
-        <div className="w-4/5 my-8 gap-8">
+    return <div className="flex justify-center my-8">
+        <div className="flex flex-col w-4/5 gap-6">
             <Navbar />
             <div>
                 {props.children}

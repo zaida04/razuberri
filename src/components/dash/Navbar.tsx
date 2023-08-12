@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, navigationMenuTriggerStyle } from "../ui/navigation-menu";
+import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from "@/components/ui/NavigationMenu";
+import { useRouter } from "next/router";
 
 const links = [
     {
         "name": "Servers",
-        "href": "/servers"
+        "href": "/dashboard"
     },
     {
         "name": "Members",
@@ -17,6 +18,8 @@ const links = [
 ]
 
 export default function Navbar() {
+    const router = useRouter();
+
     return <div className="flex flex-row items-center justify-between w-full border-b-[1px] border-slate-300">
         <div>
             <h1 className="text-4xl font-bold">Razuberri</h1>
@@ -26,7 +29,7 @@ export default function Navbar() {
                 {links.map((link, i) =>
                     <NavigationMenuItem key={i}>
                         <Link href={link.href}>
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} hover:bg-stone-400 ${router.route.includes(link.href) ? "bg-stone-400" : "bg-stone-300"}`}>
                                 {link.name}
                             </NavigationMenuLink>
                         </Link>
