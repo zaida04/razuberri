@@ -2,6 +2,7 @@ import { Button } from "../ui/Button";
 import RoleSelect from "./RoleSelect";
 
 interface MemberData {
+    id: number
     name: string;
     email: string;
     role: string;

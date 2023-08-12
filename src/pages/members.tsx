@@ -3,16 +3,19 @@ import Member from "@/components/dash/Member"
 
 const dummyData = [
     {
+        id: 1,
         "email": "test@email.com",
         "name": "Test User",
         "role": "Admin"
     },
     {
+        id: 2,
         "email": "test2@email.com",
         "name": "Test User 2",
         "role": "Member"
     },
     {
+        id: 3,
         "email": "test3@email.com",
         "name": "Test User 3",
         "role": "Member"
