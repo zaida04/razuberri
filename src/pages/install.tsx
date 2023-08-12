@@ -62,8 +62,10 @@ const steps = {
     </Section>
 }
 
+const stepLabels = ["Main", "Child"]
+
 export default function Install() {
-    const [step, _setStep] = useState("Main");
+    const [step, _setStep] = useState(stepLabels[0]);
 
     const setStep = useCallback((step: string) => {
         return () => _setStep(step);
@@ -71,9 +73,10 @@ export default function Install() {
 
     return <Layout>
         <div className="flex flex-col gap-6">
-            <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box">
-                <li onClick={setStep("Main")}><a>Main</a></li>
-                <li onClick={setStep("Child")}><a>Child</a></li>
+            <ul className="menu menu-vertical menu-horizontal bg-base-200 rounded-box gap-1">
+                {stepLabels.map((label) => (
+                    <li className={`${step === label ? "bg-gray-300" : ""} rounded-lg`} onClick={setStep(label)} key={label}><a>{label}</a></li>
+                ))}
             </ul>
             <div className="flex flex-col">
                 {steps[step as keyof typeof steps]}

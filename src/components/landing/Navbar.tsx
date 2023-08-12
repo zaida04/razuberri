@@ -1,3 +1,5 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export const topbar = {
@@ -20,15 +22,23 @@ export default function Navbar() {
                 </Link>
             </h2>
         </div>
-        <div className="md:flex hidden lg:block">
-            <ul className="menu space-x-8 menu-horizontal">
-                {genNav}
-                <Link href="/install">
-                    <button className="btn btn-primary">
-                        Install
-                    </button>
-                </Link>
-            </ul>
+        <div>
+            <div className="block md:hidden">
+                <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+                    <FontAwesomeIcon className="text-xl w-8 h-8 drawer-button" icon={faBars} />
+                </label>
+            </div>
+
+            <div className="hidden md:flex lg:block">
+                <ul className="menu space-x-8 menu-horizontal">
+                    {genNav}
+                    <Link href="/install">
+                        <button className="btn btn-primary">
+                            Install
+                        </button>
+                    </Link>
+                </ul>
+            </div>
         </div>
     </div>
 }

@@ -1,14 +1,17 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 
-export default function DashLayout(props: { children: React.ReactNode }) {
-    return <div className="flex justify-center my-8">
-        <div className="flex flex-col w-4/5 gap-6">
-            <Navbar />
-            <div className="min-h-[75vh]">
-                {props.children}
+export default function Layout(props: { children: React.ReactNode }) {
+    return <div className="drawer h-fit flex flex-col">
+        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col my-4 md:mx-32 mx-4 gap-4">
+            <div className="w-full">
+                <Navbar />
             </div>
-            <Footer />
+            {props.children}
         </div>
+        <Footer />
+        <Sidebar />
     </div>
 }

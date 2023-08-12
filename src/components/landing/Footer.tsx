@@ -14,7 +14,7 @@ const links = Object.keys(footerLinks).map((key) => (
 export default function Footer() {
     return (
         <div className="flex justify-center">
-            <footer className="footer footer-center border-t-2 border-gray-400 w-4/5 bg-base-100 pt-8 text-base-content">
+            <footer className="footer footer-center border-t-2 border-gray-400 w-4/5 md:w-4/5 py-8">
                 <div className="flex flex-col">
                     <div className="flex flex-col space-x-0 text-md md:flex-row md:space-x-8">
                         {links}
