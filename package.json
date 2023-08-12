@@ -1,4 +1,7 @@
 {
   "name": "@razuberri/workspace",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "turbo": "^1.10.12"
+  }
 }
