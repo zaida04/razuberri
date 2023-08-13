@@ -11,7 +11,7 @@ export default function HomePage() {
     return <Layout>
         <div className="alert flex flex-row bg-white border-2 border-yellow-500 md:text-sm">
             <FontAwesomeIcon icon={faInfoCircle} fixedWidth />
-            <span>Razuberri is in-progress and not production ready yet. Expect bugs.</span>
+            <span className="text-xs md:text-md">Razuberri is in-progress and not production ready yet. Expect bugs.</span>
         </div>
         <div className="hero h-[55vh] md:h-[70vh]">
             <div className="hero-content flex-col">
@@ -33,7 +33,7 @@ export default function HomePage() {
                     </h1>
                 </div>
                 <h3>No tracking, no paying, no hassle.</h3>
-                <p>Manage your raspberry pi clusters with a simple to use dashboard and receive real-time updates and notifications.</p>
+                <p className="text-center justify-center">Manage your raspberry pi clusters with a simple to use dashboard and receive real-time updates and notifications.</p>
                 <div className="mockup-code text-sm w-[20rem] md:w-[40rem] mt-4">
                     <div className="flex flex-row justify-between">
                         <pre data-prefix="$">
