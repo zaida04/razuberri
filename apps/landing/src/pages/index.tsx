@@ -33,7 +33,7 @@ export default function HomePage() {
                     </h1>
                 </div>
                 <h3>No tracking, no paying, no hassle.</h3>
-                <p>Manage your raspberry pi clusters with a simple to use dashboard instead of manually SSH&apos;ing and maintaining each one individually.</p>
+                <p>Manage your raspberry pi clusters with a simple to use dashboard and receive real-time updates and notifications.</p>
                 <div className="mockup-code text-sm w-[20rem] md:w-[40rem] mt-4">
                     <div className="flex flex-row justify-between">
                         <pre data-prefix="$">
