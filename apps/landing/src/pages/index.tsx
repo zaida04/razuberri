@@ -13,7 +13,7 @@ export default function HomePage() {
             <FontAwesomeIcon icon={faInfoCircle} fixedWidth />
             <span className="text-xs md:text-md">Razuberri is in-progress and not production ready yet. Expect bugs.</span>
         </div>
-        <div className="hero h-[55vh] md:h-[70vh]">
+        <div className="hero h-[70vh] md:h-[70vh]">
             <div className="hero-content flex-col">
                 <div className="flex flex-wrap gap-2 font-bold justify-center">
                     <h1 className="md:text-6xl text-4xl ">
