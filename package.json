@@ -1,6 +1,11 @@
 {
   "name": "@razuberri/workspace",
   "version": "1.0.0",
+  "scripts": {
+    "lint": "pnpm recursive run lint",
+    "lint:fix": "pnpm recursive run lint --fix",
+    "typecheck": "pnpm recursive run typecheck"
+  },
   "devDependencies": {
     "turbo": "^1.10.12"
   }

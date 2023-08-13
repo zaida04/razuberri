@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint -c ../../.eslintrc.json"
+    "lint": "next lint -c ../../.eslintrc.json",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
