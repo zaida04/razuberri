@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
 
                 <Heading>Contact Us</Heading>
                 <Paragraph>
-                    For any questions about this Privacy Policy, please contact us at [Your Company Contact Information].
+                    For any questions about this Privacy Policy, please contact us at me@nico.engineer.
                 </Paragraph>
             </Container>
         </Layout>
