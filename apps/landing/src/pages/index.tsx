@@ -28,7 +28,7 @@ export default function HomePage() {
                     </h1>
                     <h1 className="md:text-6xl text-4xl ">
                         <GradientText from="from-teal-400" via="via-cyan-500" to="to-blue-600">
-                            Deploy.
+                            Notify.
                         </GradientText>
                     </h1>
                 </div>
