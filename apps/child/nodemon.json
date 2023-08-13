@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "server.ts"
+    ],
+    "ext": "ts",
+    "exec": "pnpm run build && node --enable-source-maps dist/server.js",
+    "env": {
+        "NODE_ENV": "development",
+        "RAZUBERRI_CHILD_ID": "server__szpAsfW-RhfVkVLydFo9"
+    }
+}

@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
    lint:
-      name: Lint
+      name: Lint & Build
       runs-on: ubuntu-latest
       env:
          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}

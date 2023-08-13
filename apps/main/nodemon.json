@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "src/**/*.ts"
+    ],
+    "ext": "ts",
+    "exec": "pnpm run build && node --enable-source-maps dist/server.js | pino-dev"
+}
