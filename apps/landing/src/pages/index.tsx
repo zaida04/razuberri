@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faCopy, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Link from "next/link";
+import GradientText from "@/components/GradientText";
 
 export default function HomePage() {
     const [copied, setCopied] = useState(false);
@@ -10,11 +11,23 @@ export default function HomePage() {
     return <Layout>
         <div className="alert flex flex-row bg-white border-2 border-yellow-500 md:text-sm">
             <FontAwesomeIcon icon={faInfoCircle} fixedWidth />
-            <span>Razuberri is in development. Expect bugs.</span>
+            <span>Razuberri is in-progress and not production ready yet. Expect bugs.</span>
         </div>
         <div className="hero h-[55vh] md:h-[70vh]">
             <div className="hero-content flex-col">
-                <h1 className="font-bold md:text-6xl text-4xl text-center">Manage. Monitor. Deploy.</h1>
+                <div className="flex flex-row">
+                    <h1 className="font-bold md:text-6xl text-4xl text-center">
+                        <GradientText from="from-green-600" via="via-blue-500" to="to-purple-600">
+                            Manage.
+                        </GradientText>
+                        <GradientText from="from-yellow-400" via="via-orange-500" to="to-red-600">
+                            Monitor.
+                        </GradientText>
+                        <GradientText from="from-teal-400" via="via-cyan-500" to="to-blue-600">
+                            Deploy.
+                        </GradientText>
+                    </h1>
+                </div>
                 <h3>No tracking, no paying, no hassle.</h3>
                 <p>Manage your raspberry pi clusters with a simple to use dashboard instead of manually SSH&apos;ing and maintaining each one individually.</p>
                 <div className="mockup-code text-sm w-[20rem] md:w-[40rem] mt-4">
