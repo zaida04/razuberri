@@ -15,14 +15,18 @@ export default function HomePage() {
         </div>
         <div className="hero h-[55vh] md:h-[70vh]">
             <div className="hero-content flex-col">
-                <div className="flex flex-row">
-                    <h1 className="font-bold md:text-6xl text-4xl text-center">
+                <div className="flex flex-wrap gap-2 font-bold justify-center">
+                    <h1 className="md:text-6xl text-4xl ">
                         <GradientText from="from-green-600" via="via-blue-500" to="to-purple-600">
                             Manage.
                         </GradientText>
+                    </h1>
+                    <h1 className="md:text-6xl text-4xl ">
                         <GradientText from="from-yellow-400" via="via-orange-500" to="to-red-600">
                             Monitor.
                         </GradientText>
+                    </h1>
+                    <h1 className="md:text-6xl text-4xl ">
                         <GradientText from="from-teal-400" via="via-cyan-500" to="to-blue-600">
                             Deploy.
                         </GradientText>
@@ -49,5 +53,5 @@ export default function HomePage() {
                 <Link href="/install"><button className="btn btn-primary">Learn More</button></Link>
             </div>
         </div>
-    </Layout>
+    </Layout >
 }
